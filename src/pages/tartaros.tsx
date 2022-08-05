@@ -1,5 +1,6 @@
 import React from "react";
 import Center from "../components/center";
+import MediaGrid from "../components/media-grid";
 
 const Tartaros = () => {
     return <div id="content">
@@ -133,30 +134,24 @@ const Tartaros = () => {
         <section>
             <h3>▶️ SOME SCREENSHOTS & VIDEOS</h3>
 
-            {/* TODO: retake this part (need a lot of scrolling) */}
-            <div>
-                <img style={{ "maxHeight": "450px" }} src="img/tartaros/sectors_editor.gif" alt="" />
 
-                <p className="legende">
-                    <br />Map Editor: create sectors
-                </p>
-
-                <img style={{ "maxHeight": "450px" }} src="img/tartaros/entity_data_inspector.jpg" className="legende_img" alt="" />
-                <p className="legende">
-                    <br />Create and edit buildings and units in a single window.<br /><br /><br />
-                </p>
-
-                <div className="ratio_16_9">
-                    <video controls width="250">
-                        <source src="video/tartaros/building-walls.mp4" type="video/mp4" />
-
-                        Sorry, your browser doesn't support embedded videos.
-                    </video>
-                </div>
-                <p className="legende">
-                    <br />Walls' aspect change in the function of their neighbors
-                </p>
-            </div>
+            <MediaGrid media={[
+                {
+                    type: "image",
+                    title: "Map Editor: create sectors",
+                    src: "img/tartaros/sectors_editor.gif",
+                },
+                {
+                    type: "image",
+                    title: "Create and edit buildings and units in a single window.",
+                    src: "img/tartaros/entity_data_inspector.jpg"
+                },
+                {
+                    type: "video",
+                    title: "Walls' aspect change in the function of their neighbors",
+                    src: "video/tartaros/building-walls.mp4"
+                }
+            ]} />
         </section>
 
         <hr />
