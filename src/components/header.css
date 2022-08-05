@@ -1,0 +1,220 @@
+/* 
+==================================================================
+HEADER
+==================================================================
+*/
+
+header {
+    position: fixed;
+    width: 100vw;
+    left: 0;
+    top: 0;
+    background-color: var(--header-color);
+    height: var(--header-height);
+    margin-bottom: 223px;
+    z-index: 1;
+    transition: top 0.3s;
+}
+
+header a {
+    margin: 0;
+    /* center vertically */
+    padding: 20px 30px 20px 30px;
+    text-decoration: none;
+}
+
+header h1 {
+    color: white;
+    font-size: 1.1em;
+    margin: 0;
+    margin-left: 30px;
+}
+
+header h2 {
+    color: var(--first-color);
+    font-size: 1em;
+    margin: 0;
+    margin-left: 30px;
+}
+
+header a:hover h1 {
+    color: #e5e5e5;
+}
+
+header a:hover h2 {
+    color: var(--first-color-hover);
+}
+
+nav {
+    padding: 30px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    overflow: hidden;
+}
+
+nav a {
+    float: left;
+    color: white;
+    text-align: center;
+    padding: 0 16px;
+    text-decoration: none;
+    font-size: 17px;
+    line-height: 18px;
+    height: 18px;
+    font-weight: bold;
+    transition: 0.1s;
+}
+
+nav a:hover {
+    color: var(--first-color);
+}
+
+nav a.icon {
+    display: none;
+}
+
+/* 
+==================================================================
+looking_internship
+==================================================================
+*/
+
+header {
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+
+#looking_internship {
+    /* ASPECT */
+    background-color: var(--first-color-additional);
+    color: white;
+    transition: 0.1s;
+    /* POSITION */
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    /* TEXT ELLIPSIS*/
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    cursor: pointer;
+}
+
+#looking_internship:hover {
+    background-color: var(--first-color-additional-hover);
+    text-decoration: underline;
+}
+
+#looking_internship p {
+    width: min(100vw, 400px);
+    text-align: center;
+    margin: 0 auto;
+    line-height: 50px;
+}
+
+/* 
+==================================================================
+looking_internship - popup
+==================================================================
+*/
+
+#contact_popup {
+    visibility: hidden;
+    background-color: var(--header-color-second);
+    color: var(--header-color-second);
+    z-index: 1000;
+}
+
+.close_button {
+    color: var(--first-color);
+    font-size: 5em;
+    cursor: pointer;
+}
+
+#contact_popup {
+    /* FULLSCREEN POPUP */
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 1;
+    border: 0;
+}
+
+#contact_popup h3 {
+    text-align: center;
+}
+
+#contact_popup .close_button {
+    /* SET POSITION OF CLOSE BUTTON NEAR THE THUMB */
+    position: absolute;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    bottom: 15px;
+}
+
+/* Toggle this class - hide and show the popup */
+
+#contact_popup.show {
+    visibility: visible !important;
+}
+
+#contact_popup .contact {
+    margin-top: 5vh;
+}
+
+#contact_popup .contact_icons_wrapper {
+    display: grid;
+    grid-template: repeat(2, 30vh) / 1fr;
+    grid-gap: 5vh;
+    margin: 0 auto;
+}
+
+#contact_popup .contact div {
+    width: 30vh !important;
+    height: 30vh !important;
+    margin: 0 auto;
+}
+
+/* 
+==================================================================
+MEDIA QUERIES
+==================================================================
+*/
+
+/* ON MOBILE */
+
+@media screen and (max-width: 800px) {
+    nav a.icon {
+        float: right;
+        display: block;
+    }
+    /* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
+    nav.responsive {
+        padding: 0;
+        padding-top: 78px;
+    }
+    nav.responsive a.icon {
+        position: absolute;
+        right: 30px;
+        top: 30px;
+    }
+    nav.responsive a:not(.icon) {
+        display: block;
+        background-color: var(--first-color);
+        color: white;
+        height: 50px;
+        line-height: 50px;
+        text-align: center;
+        /* width positionning*/
+        width: 100vw;
+        padding: 0;
+    }
+    nav.responsive a:not(.icon):hover {
+        background-color: var(--first-color-hover);
+    }
+}
