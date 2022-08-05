@@ -9,7 +9,7 @@ const Header = () => {
 
     return <>
         <header>
-            <a href="index.php">
+            <a href="/">
                 <h1>THEO FARNOLE</h1>
                 <h2>GAME DEVELOPER</h2>
             </a>
