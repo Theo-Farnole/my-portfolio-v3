@@ -158,7 +158,7 @@ const Tartaros = () => {
 
         <section id="game-see-more">
             <Center>
-                <a className="button bigger-text" target="_blank" href="https://github.com/Theo-Farnole/Tartaros" rel="noreferrer">
+                <a className="button bigger-text" target="_blank" href="https://github.com/Theo-Farnole/Tartaros_v2" rel="noreferrer">
                     <img className="button-left-icon" src="img/icons/settings.png" alt="" />
                     SEE CODE
                 </a>
