@@ -53,7 +53,7 @@ const Home = () => {
                         <li><b>UI</b>: wireframing, programming, implementation</li>
                     </ul>
 
-                    <a className="button" href="gameleon-experience.php">
+                    <a className="button" href="gameleon-experience">
                         SEE MORE
                     </a>
                 </div>
@@ -81,7 +81,7 @@ const Home = () => {
                         <li>Publishing the game</li>
                     </ul>
 
-                    <a className="button" href="stickwars.php">
+                    <a className="button" href="stickwars">
                         SEE MORE
                     </a>
                 </div>
@@ -105,7 +105,7 @@ const Home = () => {
                         <li>Developping the game</li>
                     </ul>
 
-                    <a className="button" href="runrunball.php">
+                    <a className="button" href="runrunball">
                         SEE MORE
                     </a>
                 </div>
@@ -134,7 +134,7 @@ const Home = () => {
                         <li><b>Polishing</b> the game</li>
                     </ul>
 
-                    <a className="button" href="tartaros.php">
+                    <a className="button" href="tartaros">
                         SEE MORE
                     </a>
                 </div>
@@ -158,7 +158,7 @@ const Home = () => {
                         <li><strong>Unity Editor</strong>: improving level designer's workflow</li>
                     </ul>
 
-                    <a className="button" href="candyhunt.php">
+                    <a className="button" href="candyhunt">
                         SEE MORE
                     </a>
                 </div>

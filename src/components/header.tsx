@@ -14,9 +14,9 @@ const Header = () => {
             </a>
 
             <nav>
-                <a href="index.php">HOME</a>
-                <a href="index.php#professional-xp">PROJECTS</a>
-                <a href="skill.php">SKILLS & SOFTWARES</a>
+                <a href="/#">HOME</a>
+                <a href="/#professional-xp">PROJECTS</a>
+                <a href="/skill.php">SKILLS & SOFTWARES</a>
                 <a href="javascript:void(0);" className="icon" onClick={toggleNav}>
                     <i className="fa fa-bars"></i>
                 </a>
