@@ -114,19 +114,6 @@ const Home = () => {
                 openInNewPage={true}
                 buttonLabel="READ"
             />
-
-
-            <ProjectOverview
-                link="https://www.linkedin.com/pulse/how-speed-up-development-your-games-th%25C3%25A9o-farnole-/"
-                imgPath="img/homepage-thumbnails/tight_coupling.jpg"
-                jobTitle="How to speed up development of your games?"
-                bulletsPoints={[
-                    <>Loose vs Tight coupling notions</>,
-                    <>Observer design pattern</>
-                ]}
-                openInNewPage={true}
-                buttonLabel="READ"
-            />
         </div>
     </>;
 }
