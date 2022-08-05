@@ -47,6 +47,7 @@ const Tartaros = () => {
                 <li>Guarantee the smooth running of the technical part</li>
                 <li><b>Programming systems</b> & <b>Polishing</b></li>
                 <li>Developping tools</li>
+                <li>Optimization to handle hundreds of units (eg. multithreading, GPU animations baking) </li>
                 <li>Code reviews of <a href="https://dimitryjulliard.wixsite.com/portfolio" target="_blank" rel="noreferrer">Dimitry</a>'s work (the other programmer)</li>
             </ul>
         </section>
