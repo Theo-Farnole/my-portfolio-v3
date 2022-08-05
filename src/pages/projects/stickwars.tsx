@@ -106,13 +106,11 @@ const StickWars = () => {
                     <img className="button-left-icon" src="img/icons/game-controller.png" alt="" />
                     PLAY
                 </a>
-
-                <a className="button bigger-text" target="_blank" href="https://github.com/Theo-Farnole/StickWars_AirConsole" rel="noreferrer">
-                    <img className="button-left-icon" src="img/icons/settings.png" alt="" />
-                    SEE CODE
-                </a>
             </Center>
         </section>
+
+        <hr />
+        <ProjectNavigator projectId="stickwars" />
 
     </div>
 };

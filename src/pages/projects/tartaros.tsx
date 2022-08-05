@@ -74,7 +74,7 @@ const Tartaros = () => {
                 </li>
 
                 <br />
-                <img style={{ "maxHeight": "400px" }} src="img/tartaros/scenes_browser.gif" />
+                <img style={{ "maxHeight": "400px" }} src="img/tartaros/scenes_browser.gif" alt="scene browser GIF; the user is adding and removing scenes using the tool" />
             </ul>
         </section>
 
@@ -109,7 +109,7 @@ const Tartaros = () => {
                 <li><b>Easy to use:</b> Add attribute [CheatMethod] a method, to add it in the cheat menu.
                     <br />
 
-                    <img style={{ "maxHeight": "200px" }} src="img/tartaros/cheats_menu_snippet.png" />
+                    <img style={{ "maxHeight": "200px" }} src="img/tartaros/cheats_menu_snippet.png" alt="a code snippet of how to implement a cheat (using a simple attribut [CheatMethod]" />
                 </li>
 
                 <li>
@@ -140,11 +140,6 @@ const Tartaros = () => {
                     type: "image",
                     title: "Create and edit buildings and units in a single window.",
                     src: "img/tartaros/entity_data_inspector.jpg"
-                },
-                {
-                    type: "video",
-                    title: "Walls' aspect change in the function of their neighbors",
-                    src: "video/tartaros/building-walls.mp4"
                 }
             ]} />
         </section>
@@ -159,6 +154,9 @@ const Tartaros = () => {
                 </a>
             </Center>
         </section>
+
+        <hr />
+        <ProjectNavigator projectId="tartaros" />
 
     </div>;
 };

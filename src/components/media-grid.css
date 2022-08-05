@@ -1,6 +1,6 @@
 .grid-container {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
   grid-gap: 1em;
 }
 
@@ -13,6 +13,13 @@
   /* position the text in t’ middle*/
   display: flex;
   align-items: flex-end;
+  justify-content: center;
+  text-align: center;
+}
+
+.location-image {
+  display: flex;
+  align-items: center;
   justify-content: center;
   text-align: center;
 }

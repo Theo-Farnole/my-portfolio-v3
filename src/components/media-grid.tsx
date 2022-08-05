@@ -3,7 +3,7 @@ import "./media-grid.css";
 
 type Media = {
     type: "image" | "video";
-    title: string;
+    title: string | JSX.Element;
     src: string;
     alt?: string;
 }

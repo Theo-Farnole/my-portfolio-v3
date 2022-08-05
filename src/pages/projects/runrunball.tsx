@@ -74,6 +74,9 @@ const RunRunBall = () => {
             </Center>
         </section>
 
+        <hr />
+        <ProjectNavigator projectId="runrunball" />
+
     </div>;
 }
 

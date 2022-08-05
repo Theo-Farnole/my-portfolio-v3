@@ -12,7 +12,10 @@ const Center = ({ children }: Props) => {
             alignItems: 'center',
             justifyContent: 'center',
         }}>
-        {children}
+        <div>
+
+            {children}
+        </div>
     </div>;
 };
 

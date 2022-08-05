@@ -161,6 +161,9 @@ const GameleonXp = () => {
             </ul>
         </section>
 
+        <hr />
+        <ProjectNavigator projectId="gameleon-xp" />
+
     </div>;
 };
 

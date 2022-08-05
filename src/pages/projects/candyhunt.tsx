@@ -1,5 +1,6 @@
 import React from "react";
 import Center from "../../components/center";
+import MediaGrid from "../../components/media-grid";
 import ProjectNavigator from "../../components/project-navigator";
 
 const CandyHunt = () => {
@@ -67,34 +68,35 @@ const CandyHunt = () => {
         <section>
             <h3>▶️ IMPROVING LEVEL DESIGNER WORKFLOW</h3>
 
-            <Center>
-                <div>
-                    <div className="ratio_16_9">
-                        <video controls width="250">
+
+            <div className="ratio_16_9">
+                <video controls width="250">
 
 
-                            <source src="video/candyhunt_patrol.mp4" type="video/mp4" />
+                    <source src="video/candyhunt_patrol.mp4" type="video/mp4" />
 
-                            Sorry, your browser doesn't support embedded videos.
-                        </video>
-                    </div>
-                    <p className="legende">
-                        <br />Level designers edit enemies' patrols points with move handles: <br />visual, optimized, maintainable ✔️
-                    </p>
+                    Sorry, your browser doesn't support embedded videos.
+                </video>
+            </div>
+            <p className="legende">
+                Editing enemies path: visual and maintainable
+            </p>
 
-                    <img src="img/candyhunt_events.jpg" className="legende_img" alt="The Unity inspector with UnityEvent" />
-                    <p className="legende">
-                        <br />Add UnityEvent to avoid level designers from programming.
-                    </p>
-
-                    <img src="img/candyhunt_load.jpg" className="legende_img" alt="Screenshot of the Unity hierarchy with 2 scenes opened simultaneously" />
-                    <p className="legende">
-                        <br />When a level is opened in Editor, automatically load others scenes layers (like code or art).<br />
-                        Avoid browsing infinitely to load each scenes one by one. <br />
-                        Time saved ✔️
-                    </p>
-                </div>
-            </Center>
+            <MediaGrid media={[
+                {
+                    type: "image",
+                    src: "img/candyhunt_events.jpg",
+                    title: "Add UnityEvent to avoid level designers from programming.",
+                },
+                {
+                    type: "image",
+                    src: "img/candyhunt_load.jpg",
+                    title: <>
+                        We developed this project with multi-scene logic : each layers contains some info (code, arts, etc..).<br />
+                        When a level is opened in Editor, automatically load others scenes associated to the one opened.<br />
+                    </>
+                }
+            ]} />
         </section>
 
         <hr />
@@ -102,11 +104,14 @@ const CandyHunt = () => {
         <section id="game-see-more">
             <Center>
                 <a className="button bigger-text" target="_blank" href="https://lortedo.itch.io/candy-hunt" rel="noreferrer">
-                    <img className="button-left-icon" src="img/icons/game-controller.png" />
+                    <img className="button-left-icon" src="img/icons/game-controller.png" alt="game controller icon" />
                     PLAY
                 </a>
             </Center>
         </section>
+
+        <hr />
+        <ProjectNavigator projectId="candyhunt" />
 
     </div>;
 };

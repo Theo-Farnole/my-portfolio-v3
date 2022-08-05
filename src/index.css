@@ -210,9 +210,9 @@ section .button {
 }
 
 .legende {
-  color: grey;
   text-align: center;
-  display: inline;
+  width: 100%;
+  /* display: inline; */
 }
 
 .legende_img {
