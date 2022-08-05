@@ -1,5 +1,6 @@
 import React from 'react';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import Footer from './components/footer';
 import Header from './components/header';
 import CandyHunt from './pages/candyhunt';
 import Error404 from './pages/errors/404';
@@ -26,6 +27,8 @@ function App() {
         <Route path="*" element={<Error404 />} />
       </Routes>
     </BrowserRouter>
+
+    <Footer />
   </>;
 }
 

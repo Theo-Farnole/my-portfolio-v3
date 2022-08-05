@@ -30,13 +30,32 @@ const Home = () => {
 
             <hr />
 
+            {/* TODO: add a "highlighted project" section and put tartaros */}
+            <h1>📌 PINNED PROJECT </h1>
+
+
+            <ProjectOverview
+                link="tartaros"
+                imgPath="img/tartaros/homepage.jpg"
+                jobTitle="Lead Game Developer"
+                subtitle1="RTS | Unity & C# | 2021"
+                bulletsPoints={[
+                    <>Designing entire <b>code architecture</b></>,
+                    <><b>Programming</b>: building, units, fog of war</>,
+                    <>Creation of <b>tools</b> (eg. map editor)</>,
+                    <>Polishing the game</>,
+                ]}
+            />
+
+            <hr />
+
             <h1 id="professional-xp">PROFESSIONAL EXPERIENCE</h1>
 
             <ProjectOverview
                 link="/gameleon-experience"
                 imgPath="/img/gameleon-experience/page_cover.webp"
                 jobTitle="Game Developer Internship"
-                subtitle1="8 months | Unity & C# | 2020-2021"
+                subtitle1="Mobile Game | Unity & C# | 2020-2021"
                 bulletsPoints={[
                     <><b>Tools</b> creation</>,
                     <>Improving programming knowledge</>,
@@ -75,18 +94,7 @@ const Home = () => {
 
             <h1>SCHOOL PROJECTS</h1>
 
-            <ProjectOverview
-                link="tartaros"
-                imgPath="img/tartaros/homepage.jpg"
-                jobTitle="Lead Game Developer"
-                subtitle1="RTS | Unity & C# | 2021"
-                bulletsPoints={[
-                    <>Designing entire <b>code architecture</b></>,
-                    <><b>Programming</b>: building, units, fog of war</>,
-                    <>Creation of <b>tools</b> (eg. map editor)</>,
-                    <>Polishing the game</>,
-                ]}
-            />
+
 
             <ProjectOverview
                 link="candyhunt"

@@ -32,7 +32,7 @@ const Tartaros = () => {
             <ul>
                 <li><strong>Genre:</strong> RTS</li>
                 <li><strong>Engine:</strong> Unity</li>
-                <li><strong>Development duration:</strong> In production since 1st march 2021</li>
+                <li><strong>Development duration:</strong> 3 months</li>
                 <li><strong>Team:</strong> 7 game artists, 4 game designers</li>
             </ul>
         </section>
@@ -43,9 +43,10 @@ const Tartaros = () => {
             <h3>▶️ MY ROLE: LEAD TECHNICAL GAME DESIGN</h3>
             <ul>
                 <li>UML conception</li>
-                <li>Code reviews of <a href="https://dimitryjulliard.wixsite.com/portfolio" target="_blank" rel="noreferrer">Dimitry</a>'s work (the other programmer)</li>
                 <li>Guarantee the smooth running of the technical part</li>
                 <li><b>Programming systems</b> & <b>Polishing</b></li>
+                <li>Developping tools</li>
+                <li>Code reviews of <a href="https://dimitryjulliard.wixsite.com/portfolio" target="_blank" rel="noreferrer">Dimitry</a>'s work (the other programmer)</li>
             </ul>
         </section>
 
@@ -55,9 +56,8 @@ const Tartaros = () => {
             <h3>▶️ WHAT I LEARNED / IMPROVED</h3>
             <ul>
                 <li>Create <strong>maintainable</strong> and <strong>expandable</strong> code with <strong>SOLID principles</strong></li>
-                <li>Finite State Machine IA driven</li>
                 <li><b>Teleworking</b> project</li>
-                <li>Improving State Machine design pattern understanding</li>
+                <li>Improving AI State Machine understanding</li>
                 <li>Test Driven Development on some systems</li>
             </ul>
         </section>
@@ -66,7 +66,7 @@ const Tartaros = () => {
 
         <section>
             <h3>▶️ SCENES BROWSER</h3>
-            Opening a scene in tedious: it easily takes 5/10 seconds to find the scene we want to open. So, <b>the scenes browser let's focus developers on their tasks</b>, not on finding their scenes.
+            Opening a scene in Unity is tedious: it easily takes 5/10 seconds to find the scene we want to open. So, <b>the scenes browser let's focus developers on their tasks</b>, not on finding their scenes.
 
             <ul>
                 <li>
@@ -133,31 +133,30 @@ const Tartaros = () => {
         <section>
             <h3>▶️ SOME SCREENSHOTS & VIDEOS</h3>
 
-            <Center>
-                <div>
-                    <img style={{ "maxHeight": "450px" }} src="img/tartaros/sectors_editor.gif" alt="" />
+            {/* TODO: retake this part (need a lot of scrolling) */}
+            <div>
+                <img style={{ "maxHeight": "450px" }} src="img/tartaros/sectors_editor.gif" alt="" />
 
-                    <p className="legende">
-                        <br />Map Editor: create sectors
-                    </p>
+                <p className="legende">
+                    <br />Map Editor: create sectors
+                </p>
 
-                    <img style={{ "maxHeight": "450px" }} src="img/tartaros/entity_data_inspector.jpg" className="legende_img" alt="" />
-                    <p className="legende">
-                        <br />Create and edit buildings and units in a single window.<br /><br /><br />
-                    </p>
+                <img style={{ "maxHeight": "450px" }} src="img/tartaros/entity_data_inspector.jpg" className="legende_img" alt="" />
+                <p className="legende">
+                    <br />Create and edit buildings and units in a single window.<br /><br /><br />
+                </p>
 
-                    <div className="ratio_16_9">
-                        <video controls width="250">
-                            <source src="video/tartaros/building-walls.mp4" type="video/mp4" />
+                <div className="ratio_16_9">
+                    <video controls width="250">
+                        <source src="video/tartaros/building-walls.mp4" type="video/mp4" />
 
-                            Sorry, your browser doesn't support embedded videos.
-                        </video>
-                    </div>
-                    <p className="legende">
-                        <br />Walls' aspect change in the function of their neighbors
-                    </p>
+                        Sorry, your browser doesn't support embedded videos.
+                    </video>
                 </div>
-            </Center>
+                <p className="legende">
+                    <br />Walls' aspect change in the function of their neighbors
+                </p>
+            </div>
         </section>
 
         <hr />

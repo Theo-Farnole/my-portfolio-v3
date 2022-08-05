@@ -1,0 +1,78 @@
+:root {
+    --footer-height: 128px;
+}
+
+body {
+    display: block;
+    height: 100%;
+}
+
+/* 
+==================================================================
+FOOTER PARENT
+==================================================================
+*/
+
+#footer-parent {
+    position: relative;
+    
+    margin-top: var(--footer-height);
+    height: var(--footer-height);
+}
+
+
+
+/* 
+==================================================================
+CONTACT
+==================================================================
+*/
+
+#footer-parent .contact {
+    background-color: var(--first-color);
+    width: 100%;
+    display: block;
+    position: absolute;
+    bottom: var(--footer-height);
+    margin: 0 auto;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+footer .contact {
+    padding: 20px 0;
+}
+
+#footer-parent .contact_icon {
+    fill: white !important;
+}
+
+/* 
+==================================================================
+THX YOU SECTION
+==================================================================
+*/
+
+#thx_you_section p {
+    text-align: center;
+    margin: 0;
+}
+
+#thx_you_section {
+    background-color: var(--footer-color);
+    color: var(--footer-text-color);
+
+    position: absolute;
+    bottom: 0;
+    width: 100%;    
+    height: var(--footer-height);
+
+    margin-bottom: 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

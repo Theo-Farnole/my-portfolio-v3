@@ -11,7 +11,6 @@ const Center = ({ children }: Props) => {
             display: 'flex',
             alignItems: 'center',
             justifyContent: 'center',
-            height: '100vh',
         }}>
         {children}
     </div>;
