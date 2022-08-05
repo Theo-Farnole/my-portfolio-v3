@@ -1,5 +1,6 @@
 import React from "react";
 import DownloadResumeButton from "../components/download-resume-button";
+import ProjectOverview from "../components/project-overview";
 
 const Home = () => {
     return <>
@@ -31,181 +32,101 @@ const Home = () => {
 
             <h1 id="professional-xp">PROFESSIONAL EXPERIENCE</h1>
 
-            <section className="project-overview">
+            <ProjectOverview
+                link="/gameleon-experience"
+                imgPath="/img/gameleon-experience/page_cover.webp"
+                jobTitle="Game Developer Internship"
+                subtitle1="8 months | Unity & C# | 2020-2021"
+                bulletsPoints={[
+                    <><b>Tools</b> creation</>,
+                    <>Improving programming knowledge</>,
+                    <><b>UI</b>: wireframing, programming, implementation</>,
+                ]}
+            />
 
-                <div className="project-overview-content">
-                    <a className="project-overview-thumbnail" href="gameleon-experience.php">
-                        <img src="img/gameleon-experience/page_cover.webp" alt="" />
-                    </a>
-
-                    <p>
-                        <strong className="job-title">Game Developer Internship</strong><br />
-                        8 months | 2020-2021<br />
-                        Unity & C#
-                    </p>
-
-                    <ul>
-                        <li><b>Tools</b> creation</li>
-                        <li>Improving programming knowledge</li>
-                        <li><b>UI</b>: wireframing, programming, implementation</li>
-                    </ul>
-
-                    <a className="button" href="gameleon-experience">
-                        SEE MORE
-                    </a>
-                </div>
-            </section>
 
             <hr />
 
             <h1>PERSONAL PUBLISHED PROJECT 🥳</h1>
 
-            <section className="project-overview">
-                <div className="project-overview-content">
-                    <a className="project-overview-thumbnail" href="stickwars.php">
-                        <img style={{ "objectPosition": "100% 100%" }} src="img/stickwars/homepage.jpg" alt="" />
-                    </a>
+            <ProjectOverview
+                link="/stickwars"
+                imgPath="/img/stickwars/homepage.jpg"
+                jobTitle="Game Developer"
+                subtitle1="Platformer | Unity & C# | 2020"
+                bulletsPoints={[
+                    "Developing the game",
+                    "Publishing the game"
+                ]}
+            />
 
-                    <p>
-                        <strong className="job-title">Game Developer</strong><br />
-                        Platformer | Unity & C# | 2020<br />
-                        <br />
-                        StickWars
-                    </p>
-
-                    <ul>
-                        <li>Developing the game</li>
-                        <li>Publishing the game</li>
-                    </ul>
-
-                    <a className="button" href="stickwars">
-                        SEE MORE
-                    </a>
-                </div>
-            </section>
-
-            <section className="project-overview">
-                <div className="project-overview-content">
-                    <a className="project-overview-thumbnail" href="runrunball.php">
-                        <img style={{ "objectPosition": "100% 100%" }} src="img/runrunball/homepage.jpg" alt="" />
-                    </a>
-
-                    <p>
-                        <strong className="job-title">Game Developer</strong><br />
-                        Mobile game | Unity & C# | 2020<br />
-                        <br />
-                        Run Run Ball
-                    </p>
-
-                    <ul>
-                        <li>Hypercasual game design</li>
-                        <li>Developping the game</li>
-                    </ul>
-
-                    <a className="button" href="runrunball">
-                        SEE MORE
-                    </a>
-                </div>
-            </section>
+            <ProjectOverview
+                link="runrunrunball"
+                imgPath="img/runrunball/homepage.jpg"
+                jobTitle="Game Developer"
+                subtitle1="Mobile game | Unity & C# | 2020"
+                bulletsPoints={[
+                    "Hypercasual game design",
+                    "Developing the game",
+                ]}
+            />
 
             <hr />
 
             <h1>SCHOOL PROJECTS</h1>
 
-            <section className="project-overview">
-                <div className="project-overview-content">
-                    <a className="project-overview-thumbnail" href="tartaros.php">
-                        <img src="img/tartaros/homepage.jpg" alt="" />
-                    </a>
+            <ProjectOverview
+                link="tartaros"
+                imgPath="img/tartaros/homepage.jpg"
+                jobTitle="Lead Game Developer"
+                subtitle1="RTS | Unity & C# | 2021"
+                bulletsPoints={[
+                    <>Designing entire <b>code architecture</b></>,
+                    <><b>Programming</b>: building, units, fog of war</>,
+                    <>Creation of <b>tools</b> (eg. map editor)</>,
+                    <>Polishing the game</>,
+                ]}
+            />
 
-                    <p>
-                        <strong className="job-title">Lead Technical Game Designer</strong><br />
-                        RTS | Unity & C# | 2021<br />
-                        <br />
-                        Tartaros<br />
-                    </p>
+            <ProjectOverview
+                link="candyhunt"
+                imgPath="img/candyhunt/homepage.jpg"
+                jobTitle="Game Developer"
+                subtitle1="Platformer | Unity & C# | 2020"
+                bulletsPoints={[
+                    <>Programming enemies' <strong>IA</strong></>,
+                    <><strong>Unity Editor</strong>: improving level designer's workflow</>
+                ]}
 
-                    <ul>
-                        <li><b>Programming</b>: building, units, fog of war</li>
-                        <li>Creating a RTS <b>map editor</b> for LDs</li>
-                        <li><b>Polishing</b> the game</li>
-                    </ul>
-
-                    <a className="button" href="tartaros">
-                        SEE MORE
-                    </a>
-                </div>
-            </section>
-
-            <section className="project-overview">
-                <div className="project-overview-content">
-                    <a className="project-overview-thumbnail" href="candyhunt.php">
-                        <img src="img/candyhunt/homepage.jpg" alt="" />
-                    </a>
-
-                    <p>
-                        <strong className="job-title">Technical Game Designer</strong><br />
-                        Platformer | Unity & C# | 2020<br />
-                        <br />
-                        Candy Hunt<br />
-                    </p>
-
-                    <ul>
-                        <li>Programming enemies' <strong>IA</strong></li>
-                        <li><strong>Unity Editor</strong>: improving level designer's workflow</li>
-                    </ul>
-
-                    <a className="button" href="candyhunt">
-                        SEE MORE
-                    </a>
-                </div>
-            </section>
+            />
 
             <hr />
 
             <h1>SOME ARTICLES I WROTE</h1>
 
-            <section className="project-overview">
-                <div className="project-overview-content">
-                    <a className="project-overview-thumbnail" href="https://www.linkedin.com/pulse/how-make-gesture-recognition-virtual-reality-th%C3%A9o-farnole-/" target="_blank" rel="noreferrer">
-                        <img src="img/homepage-thumbnails/gesture_recognition.jpg" alt="" />
-                    </a>
-
-                    <p>
-                        <strong className="job-title">How to make gesture recognition in virtual reality?</strong><br />
-                    </p>
-
-                    <ul>
-                        <li>Resolving user's micro handshakes</li>
-                    </ul>
-
-                    <a className="button" href="https://www.linkedin.com/pulse/how-make-gesture-recognition-virtual-reality-th%C3%A9o-farnole-/" target="_blank" rel="noreferrer">
-                        READ
-                    </a>
-                </div>
-            </section>
-
-            <section className="project-overview">
-                <div className="project-overview-content">
-                    <a className="project-overview-thumbnail" href="https://www.linkedin.com/pulse/how-speed-up-development-your-games-th%25C3%25A9o-farnole-/" target="_blank" rel="noreferrer" >
-                        <img src="img/homepage-thumbnails/tight_coupling.jpg" alt="" />
-                    </a>
-
-                    <p>
-                        <strong className="job-title">How to speed up development of your games?</strong><br />
-                    </p>
-
-                    <ul>
-                        <li>Loose vs Tight coupling notions</li>
-                        <li>Observer design pattern</li>
-                    </ul>
+            <ProjectOverview
+                link="https://www.linkedin.com/pulse/how-make-gesture-recognition-virtual-reality-th%C3%A9o-farnole-/"
+                imgPath="img/homepage-thumbnails/gesture_recognition.jpg"
+                jobTitle="How to make gesture recognition in virtual reality?"
+                bulletsPoints={[
+                    <>Resolving user's micro handshakes</>
+                ]}
+                openInNewPage={true}
+                buttonLabel="READ"
+            />
 
 
-                    <a className="button" href="https://www.linkedin.com/pulse/how-speed-up-development-your-games-th%25C3%25A9o-farnole-/" target="_blank" rel="noreferrer">
-                        READ
-                    </a>
-                </div>
-            </section>
+            <ProjectOverview
+                link="https://www.linkedin.com/pulse/how-speed-up-development-your-games-th%25C3%25A9o-farnole-/"
+                imgPath="img/homepage-thumbnails/tight_coupling.jpg"
+                jobTitle="How to speed up development of your games?"
+                bulletsPoints={[
+                    <>Loose vs Tight coupling notions</>,
+                    <>Observer design pattern</>
+                ]}
+                openInNewPage={true}
+                buttonLabel="READ"
+            />
         </div>
     </>;
 }
