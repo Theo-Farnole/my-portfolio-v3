@@ -11,3 +11,429 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+:root {
+  --header-height: 78px;
+  --first-color: #3498db;
+  --first-color-hover: #2980b9;
+  --second-color: #ffba08;
+  --header-color: #34495e;
+  --header-color-second: #ecf0f1;
+  --first-color-additional: #099C4F;
+  --first-color-additional-hover: #078c47;
+  --footer-color: var(--header-color);
+  --footer-text-color: var(--header-color-second);
+  --clean: #dfdce4;
+  /* https://www.canva.com/learn/website-color-schemes/ */
+}
+
+body {
+  font-family: 'Varela Round', sans-serif;
+  margin: 0;
+  padding: 0;
+  padding-bottom: 0px;
+  padding-top: var(--header-height);
+}
+
+.blur {
+  filter: blur(2px);
+  -webkit-filter: blur(2px);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  letter-spacing: 0.05em;
+  font-family: 'Montserrat', sans-serif;
+}
+
+hr {
+  margin: 30px 0;
+  border-top: 0.75px;
+  border-color: var(--clean);
+}
+
+p {
+  font-size: 16px;
+  /* line-height: 24px; */
+}
+
+h1 {
+  font-size: 2.3em;
+}
+
+h2 {
+  font-size: 1.8em;
+}
+
+h3 {
+  font-size: 1.3em;
+}
+
+ul, ol {
+  margin-left: 20px;
+}
+
+li {
+  padding-top: 10px;
+}
+
+/* 
+==================================================================
+CUSTOM GLOBAL CLASSES
+==================================================================
+*/
+
+.button {
+  display: inline-block;
+  background-color: var(--first-color);
+  color: white;
+  text-decoration: none;
+  border-radius: 99999px;
+  transition: 0.2s;
+  text-align: center;
+  align-content: center;
+  padding: 20px 50px 20px 50px;
+}
+
+.bigger-text {
+  font-size: 1.4em;
+}
+
+.button-left-icon {
+  height: 50px;
+  width: 50px;
+  vertical-align: middle;
+  margin-right: 10px;
+  transition: 0.3s;
+}
+
+.button:hover {
+  filter: brightness(90%);
+}
+
+.button:hover .button-left-icon {
+  transform: rotate(45deg);
+}
+
+.center-hor {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.ratio_16_9 {
+  position: relative;
+  padding-bottom: 56.25%;
+  /* 16:9, for an aspect ratio of 1:1 change to this value to 100% */
+}
+
+.ratio_16_9 * {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.color-primary {
+  color: var(--first-color)
+}
+
+/* 
+==================================================================
+CONTENT
+==================================================================
+*/
+
+#content #about-me #title {
+  font-size: 48px;
+  color: #4e4e4e;
+  font-family: "Montserrat";
+  font-weight: bold;
+}
+
+#title .job {
+  font-size: 28px;
+}
+
+#about-me p {
+  text-align: justify;
+  /* width: 30%; */
+  /* margin-left: auto;
+  margin-right: auto; */
+}
+
+#about-me .button.download-cv {
+  background-color: var(--first-color-additional) !important;
+  /* width: 100%; */
+  color: white;
+  margin: auto;
+  display: block;
+  width: 20%;
+  text-align: center !important;
+}
+
+#content {
+  max-width: 1000px;
+  padding: 0 20px 0 20px;
+  /* center */
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 40px;
+}
+
+.project-details-cover {
+  width: 100%;
+  object-fit: cover;
+  aspect-ratio: 1920 / 576;
+}
+
+#content h1, h2, h3 {
+  color: var(--first-color);
+  font-weight: bold;
+}
+
+#content h1 {
+  text-align: center;
+  font-size: 1.8em;
+  margin-bottom: 55px;
+}
+
+.margin {
+  margin-left: 60px;
+}
+
+p a, li a {
+  color: var(--first-color);
+}
+
+section .button {
+  margin-right: 20px;
+}
+
+.legende {
+  color: grey;
+  text-align: center;
+  display: inline;
+}
+
+.legende_img {
+  display: block;
+}
+
+.legende_img:not(:last-child) {
+  margin-top: 60px;
+}
+
+#game-title {
+  text-align: center;
+}
+
+/* 
+==================================================================
+PROJECT-OVERVIEW
+==================================================================
+*/
+
+.project-overview {
+  margin-bottom: 60px;
+}
+
+.project-overview-thumbnail {
+  /* height: 250px; */
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: 50% 50%;
+  overflow: hidden;
+}
+
+.project-overview-thumbnail img {
+  transition: 1s ease;
+  aspect-ratio: 16 / 9;
+}
+
+.project-overview-thumbnail:hover img {
+  transform: scale(1.05);
+  filter: brightness(100%);
+}
+
+.project-overview h2 {
+  margin: 0;
+}
+
+/* POSIITIONNING */
+
+.project-overview .button {
+  /* center horizontally */
+  margin-left: auto;
+  margin-right: auto;
+  /* center vertically */
+  margin-bottom: auto;
+  margin-top: auto;
+  display: block;
+  width: 90px;
+}
+
+.project-overview-content {
+  display: grid;
+  grid-template-columns: 60% 1fr;
+  grid-gap: 0 20px;
+}
+
+.project-overview-content p {
+  text-align: left;
+  font-size: 1em;
+}
+
+.project-overview-content ul {
+  display: inline-block;
+  font-size: 1em;
+  padding-left: 5px;
+}
+
+.project-overview-content .job-title {
+  font-size: 1.2em;
+}
+
+.tool-details {
+  list-style-type: none;
+  border-left: solid #4e4e4e;
+}
+
+/* 
+==================================================================
+CONTACT
+==================================================================
+*/
+
+.contact_linkedin {
+  fill: #0976b4;
+}
+
+.contact_mail {
+  fill: #222222;
+}
+
+.contact_icons_wrapper {
+  /* HORIZONTAL CENTER */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: 0;
+  margin-left: 0;
+}
+
+.contact_icons_wrapper div {
+  float: left;
+  margin-left: 15px;
+}
+
+.contact_icon {
+  text-decoration: none;
+  width: 50px;
+  height: 50px;
+}
+
+/* HIGHLIGH EFFECT > opacity to 0.4, except hovered element */
+
+.contact_icons_wrapper div {
+  transition: all 0.1s linear;
+  opacity: 1;
+}
+
+.contact_icons_wrapper div:hover {
+  transform: scale(1.3);
+}
+
+.contact_icons_wrapper:hover div:not(:hover) {
+  opacity: 0.4;
+  transform: scale(1);
+}
+
+.project-nav-buttons {
+  display: flex;
+  justify-content: space-between;
+}
+
+section img {
+  max-width: 100%;
+  width: auto;
+  height: auto;
+  border-radius: 5px;
+}
+
+/* 
+==================================================================
+MEDIA QUERIES
+==================================================================
+*/
+
+/* ON MOBILE */
+
+@media screen and (max-width: 800px) {
+  /* REDUCE MARGIN BETWEEN */
+  .project-overview {
+      margin-bottom: 40px;
+  }
+  /* remove project content GRID */
+  .project-overview-content {
+      display: block;
+  }
+  .project-overview .button {
+      /* CENTER BUTTON */
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      width: 100px;
+  }
+  /* Hide all links. */
+  nav a {
+      display: none;
+  }
+  #game-see-more .button {
+      margin-right: 0;
+      width: 40vw;
+  }
+  #game-see-more .button:not(:last-child) {
+      margin-bottom: 30px;
+  }
+  .margin {
+      margin-left: 0;
+  }
+  .project-overview-content ul {
+      margin-top: 0;
+  }
+  #about-me .button.download-cv {
+      width: 100%;
+      padding-left: 0;
+      padding-right: 0;
+  }
+}
+
+/* ON DESKTOP*/
+
+@media screen and (min-width: 800px) {
+  /* SET IMAGE AT RIGHT OF TEXT & BUTTON*/
+  .project-overview .project-overview-thumbnail {
+      grid-column: 1 / 2;
+      grid-row: 1 / 4;
+  }
+  .project-overview-content p {
+      margin-top: 16px;
+      /* margin-bottom: 0; */
+  }
+  .project-overview-thumbnail img {
+      filter: brightness(90%);
+  }
+  #content #about-me {
+      margin-top: 20vh;
+      margin-bottom: 20vh;
+  }
+  #about-me .text-container {
+      display: flex;
+  }
+  #about-me .text-container>* {
+      flex: 1 1 auto;
+      flex-basis: 100%;
+      padding: 20px;
+  }
+}
