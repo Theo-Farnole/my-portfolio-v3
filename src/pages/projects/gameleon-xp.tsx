@@ -1,13 +1,10 @@
 import React from "react";
+import ProjectNavigator from "../../components/project-navigator";
 
 const GameleonXp = () => {
     return <div id="content">
 
-        <section className="project-nav-buttons" style={{ "justifyContent": "flex-end" }}>
-            <a className="button" href="stickwars.php">
-                StickWars &#62;
-            </a>
-        </section>
+        <ProjectNavigator projectId="gameleon-xp" />
 
         <hr />
 

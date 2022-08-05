@@ -1,18 +1,11 @@
 import React from "react";
-import Center from "../components/center";
+import Center from "../../components/center";
+import ProjectNavigator from "../../components/project-navigator";
 
 const RunRunBall = () => {
     return <div id="content">
 
-        <section className="project-nav-buttons">
-            <a className="button" href="stickwars.php">
-                &#60; StickWars
-            </a>
-
-            <a className="button" href="tartaros.php">
-                Tartaros &#62;
-            </a>
-        </section>
+        <ProjectNavigator projectId="runrunball" />
 
         <hr />
 

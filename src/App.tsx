@@ -2,14 +2,15 @@ import React from 'react';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Footer from './components/footer';
 import Header from './components/header';
-import CandyHunt from './pages/candyhunt';
+import CandyHunt from './pages/projects/candyhunt';
 import Error404 from './pages/errors/404';
-import GameleonXp from './pages/gameleon-xp';
 import Home from './pages/home';
-import RunRunBall from './pages/runrunball';
+import GameleonXp from './pages/projects/gameleon-xp';
+import RunRunBall from './pages/projects/runrunball';
+import StickWars from './pages/projects/stickwars';
+import Tartaros from './pages/projects/tartaros';
 import Skills from './pages/skills';
-import StickWars from './pages/stickwars';
-import Tartaros from './pages/tartaros';
+import { routeNames } from './const';
 
 function App() {
   return <>
@@ -17,13 +18,13 @@ function App() {
 
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/gameleon-experience" element={<GameleonXp />} />
-        <Route path="/stickwars" element={<StickWars />} />
-        <Route path="/runrunball" element={<RunRunBall />} />
-        <Route path="/tartaros" element={<Tartaros />} />
-        <Route path="/candy-hunt" element={<CandyHunt />} />
-        <Route path="/skills" element={<Skills />} />
+        <Route path={routeNames.home} element={<Home />} />
+        <Route path={routeNames.gameleonExperience} element={<GameleonXp />} />
+        <Route path={routeNames.stickWars} element={<StickWars />} />
+        <Route path={routeNames.runRunBall} element={<RunRunBall />} />
+        <Route path={routeNames.tartaros} element={<Tartaros />} />
+        <Route path={routeNames.candyHunt} element={<CandyHunt />} />
+        <Route path={routeNames.skills} element={<Skills />} />
         <Route path="*" element={<Error404 />} />
       </Routes>
     </BrowserRouter>
