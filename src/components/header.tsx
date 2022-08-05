@@ -10,7 +10,7 @@ const Header = () => {
         <header>
             <a href="index.php">
                 <h1>THEO FARNOLE</h1>
-                <h2>GAMEPLAY PROGRAMMER</h2>
+                <h2>GAME DEVELOPER</h2>
             </a>
 
             <nav>

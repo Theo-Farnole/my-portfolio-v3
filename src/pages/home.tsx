@@ -9,7 +9,7 @@ const Home = () => {
 
                     <div id="title">
                         Hi, I'm Théo Farnole. 😁<br />
-                        <span className="job color-primary">Gameplay Programmer</span>
+                        <span className="job color-primary">Game Developer</span>
                     </div>
 
                     <p>
