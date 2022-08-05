@@ -5,6 +5,7 @@ import "./header.css";
 const Header = () => {
 
     const [isContactOpen, setIsContactOpen] = React.useState(false);
+    const [isNavOpen, setIsNavOpen] = React.useState(false);
 
     return <>
         <header>
@@ -13,7 +14,7 @@ const Header = () => {
                 <h2>GAME DEVELOPER</h2>
             </a>
 
-            <nav>
+            <nav className={isNavOpen ? "responsive" : ""}>
                 <a href="/#">HOME</a>
                 <a href="/#professional-xp">PROJECTS</a>
                 <a href="/skills">SKILLS & SOFTWARES</a>
@@ -37,8 +38,7 @@ const Header = () => {
     }
 
     function toggleNav() {
-        // TODO: implement this function
-        throw new Error("Function not implemented.");
+        setIsNavOpen(!isNavOpen);
     }
 };
 
