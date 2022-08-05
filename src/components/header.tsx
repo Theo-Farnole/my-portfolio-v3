@@ -17,6 +17,7 @@ const Header = () => {
                 <a href="index.php">HOME</a>
                 <a href="index.php#professional-xp">PROJECTS</a>
                 <a href="skill.php">SKILLS & SOFTWARES</a>
+                {/* TODO: FIX the burger icon doesn't show up */}
                 <a href="javascript:void(0);" className="icon" onClick={toggleNav}>
                     <i className="fa fa-bars"></i>
                 </a>

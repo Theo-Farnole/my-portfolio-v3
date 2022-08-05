@@ -120,6 +120,8 @@ looking_internship - popup
 ==================================================================
 */
 
+/* TODO: set the follow in contact.css */
+
 #contact_popup {
     visibility: hidden;
     background-color: var(--header-color-second);

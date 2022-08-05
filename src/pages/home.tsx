@@ -22,7 +22,8 @@ const Home = () => {
                 </div>
 
 
-
+                {/* TODO:  make download the CV */}
+                {/* TODO:  change CV filename */}
                 <a className="button download-cv" href="others/FARNOLE_Theo_Technical_Game_Designer_CV.pdf">
                     DOWNLOAD RESUME
                 </a>
