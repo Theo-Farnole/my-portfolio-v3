@@ -48,7 +48,7 @@ const MediaGrid = ({
 
             case "video":
                 return <div className="ratio_16_9">
-                    <video controls width="250">
+                    <video controls width="250" muted>
                         <source src={src} type="video/mp4" />
 
                         Sorry, your browser doesn't support embedded videos.
