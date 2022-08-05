@@ -5,6 +5,7 @@ import CandyHunt from './pages/candyhunt';
 import GameleonXp from './pages/gameleon-xp';
 import Home from './pages/home';
 import RunRunBall from './pages/runrunball';
+import Skills from './pages/skills';
 import StickWars from './pages/stickwars';
 import Tartaros from './pages/tartaros';
 
@@ -20,6 +21,7 @@ function App() {
         <Route path="/runrunball" element={<RunRunBall />} />
         <Route path="/tartaros" element={<Tartaros />} />
         <Route path="/candy-hunt" element={<CandyHunt />} />
+        <Route path="/skills" element={<Skills />} />
       </Routes>
     </BrowserRouter>
   </>;

@@ -1,0 +1,48 @@
+.skills_wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 25px;
+    grid-auto-rows: minmax(100px, auto);    
+    list-style-type: none;
+    padding: 0;
+}
+
+.skill>h2 {
+    text-align: center;
+    font-weight: thin;      
+    font-size: 25px;
+    color: var(--header-color);
+}
+
+.skill>.skill-icon {
+    display: block;
+    width: 20%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.skill>ul
+{
+    font-weight: 100;
+    list-style-type: disc;
+
+    padding-left: 4px;
+}
+
+#content>h1 {
+    text-align: left;
+}
+
+@media screen and (max-width: 600px) {
+    .skills_wrapper {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    
+}
+
+@media screen and (min-width: 600px) {
+    .skills_wrapper {
+        grid-row-gap: 100px;
+    }
+    
+}
