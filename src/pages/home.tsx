@@ -30,9 +30,7 @@ const Home = () => {
 
             <hr />
 
-            {/* TODO: add a "highlighted project" section and put tartaros */}
             <h1>📌 PINNED PROJECT </h1>
-
 
             <ProjectOverview
                 link="tartaros"
