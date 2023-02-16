@@ -10,8 +10,13 @@ const Footer = () => {
 
             <div id="thx_you_section">
                 <p>
-                    Thank you for your interest, you've reached the end of this section !
+                    Thank you for your interest, you've reached the end of this section !<br />
+                    <a href="https://github.com/Theo-Farnole/my-portfolio-v3">
+                        Source code on Github
+                    </a>
                 </p>
+
+                <br />
             </div>
         </footer>
     </div>;

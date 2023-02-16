@@ -61,6 +61,15 @@ THX YOU SECTION
     margin: 0;
 }
 
+#thx_you_section a {
+    color: #9dc3e5;
+    text-decoration: none;
+}
+
+#thx_you_section a:hover {
+    text-decoration: underline;
+}
+
 #thx_you_section {
     background-color: var(--footer-color);
     color: var(--footer-text-color);
