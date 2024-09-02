@@ -53,7 +53,7 @@ const Home = () => {
                 link="/gameleon-experience"
                 imgPath="/img/gameleon-experience/page_cover.webp"
                 jobTitle="Game Developer Internship"
-                subtitle1="Mobile Game | Unity & C# | 2020-2021"
+                subtitle1="Mobile Game | Unity & C#"
                 bulletsPoints={[
                     <><b>Tools</b> creation</>,
                     <>Improving programming knowledge</>,
@@ -70,7 +70,7 @@ const Home = () => {
                 link="/stickwars"
                 imgPath="/img/stickwars/homepage.jpg"
                 jobTitle="Game Developer"
-                subtitle1="Platformer | Unity & C# | 2020"
+                subtitle1="Platformer | Unity & C#"
                 bulletsPoints={[
                     "Developing the game",
                     "Publishing the game"
@@ -81,7 +81,7 @@ const Home = () => {
                 link="runrunrunball"
                 imgPath="img/runrunball/homepage.jpg"
                 jobTitle="Game Developer"
-                subtitle1="Mobile game | Unity & C# | 2020"
+                subtitle1="Mobile game | Unity & C#"
                 bulletsPoints={[
                     "Hypercasual game design",
                     "Developing the game",
@@ -98,7 +98,7 @@ const Home = () => {
                 link="candyhunt"
                 imgPath="img/candyhunt/homepage.jpg"
                 jobTitle="Game Developer"
-                subtitle1="Platformer | Unity & C# | 2020"
+                subtitle1="Platformer | Unity & C#"
                 bulletsPoints={[
                     <>Programming enemies' <strong>IA</strong></>,
                     <><strong>Unity Editor</strong>: improving level designer's workflow</>
